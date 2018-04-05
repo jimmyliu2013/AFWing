@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">空军之翼</string>
+    <string name="info">所有数据来自空军之翼（http://www.afwing.com/）网站。\n\n作者：lim\n邮箱：13488684927@163.com\n\n有问题请发邮件联系，并关注更新。</string>
+    <string name="settings_title">设置</string>
+    <string name="reading_settings_title">阅读设置</string>
+    <string name="font_size">字体大小</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="cache_settings_title">缓存设置</string>
+    <string name="clear_content_cache">恢复默认设置</string>
+    <string name="clear_picture_cache">清除图片缓存</string>
+    <string name="web_settings_title">网络设置</string>
+    <string name="wifi_only">只在wifi网络时下载图片</string>
+    <string name="input_hint">请输入关键字</string>
+    <string name="about_title">关于</string>
+    <string name="info_title">软件信息</string>
+    <string name="press_again_to_exit">再按一次退出程序</string>
+    <string name="search_end_toast_text">没有找到相关内容！</string>
+    <string name="search_fail_toast_text">加载失败，请检查网络连接！</string>
+    <string name="confirm_to_clear_content_cache">确定恢复默认设置吗？</string>
+    
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_to_clear_image_cache">确定清除图片缓存吗？</string>
+    <string name="page">页</string>
+    <string name="loading">载入中...</string>
+    <string name="loading_cache">正在加载缓存...</string>
+    
+    <string name="getting_page_info">正在获取页面信息...</string>
+    <string name="load_page_info_failed">载入失败！请检查网络。</string>
+    <string name="checking_update">正在检查更新...</string>
+    <string name="insert_sd_card">请插入sd卡</string>
+    <string name="failed_to_download_new_version">下载新版本失败</string>
+    <string name="update_title">版本升级</string>
+    <string name="downloading_new_version">正在下载更新</string>
+    
+    <string name="slide_to_change_page">滑动切换页面</string>
+    <string name="sub_page_list_all">全部</string>
+    
+    <string name="load_end_toast_text">没有更多</string>
+    <string-array name="font_size_entry">    
+        <item>最大</item>    
+        <item>大</item>    
+        <item>普通</item>
+        <item>小</item> 
+        <item>最小</item>    
+    </string-array>    
+    <string-array name="font_size_entry_values">    
+        <item>1</item>    
+        <item>2</item>    
+        <item>3</item>    
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="choose_font_size">选择字体大小</string>
+    <string name="font_size_entry_default_value">3</string>    
+    
+</resources>

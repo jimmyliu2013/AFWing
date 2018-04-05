@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Afwing" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background_afwing</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Afwing</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Afwing</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Afwing</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Afwing</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Afwing</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_afwing</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_afwing</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Afwing</item>
+        <item name="actionBarSize">56dp</item>
+
+
+
+    </style>
+
+
+    <style name="MyListPopupWindow">
+
+        <!-- attributes you want go here -->
+        <item name="android:divider">#ffffff</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14sp</item>
+        <!-- <item name="android:dividerPadding">8dp</item> -->
+        <item name="android:background">@drawable/tab_indicator_ab_afwing</item>
+        <!-- <item name="android:background">@drawable/viewpager_indicator_selector</item> -->
+        <!-- <item name="android:showDividers">middle</item> -->
+        <item name="android:divider">@drawable/action_bar_divider_color</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ActionBar.Solid.Afwing" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_afwing</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_afwing</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_afwing</item>
+        <item name="progressBarStyle">@style/ProgressBar.Afwing</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Afwing" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_afwing</item>
+        <item name="progressBarStyle">@style/ProgressBar.Afwing</item>
+    </style>
+	
+    <style name="PopupMenu.Afwing" parent="@style/Widget.AppCompat.PopupMenu">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_afwing</item>	
+    </style>
+	
+    <style name="DropDownListView.Afwing" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_afwing</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Afwing" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_afwing</item>
+    </style>
+	
+    <style name="DropDownNav.Afwing" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_afwing</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_afwing</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_afwing</item>
+    </style>
+    
+    <style name="ProgressBar.Afwing" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_afwing</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Afwing" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_afwing</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Afwing.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Afwing</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Afwing</item>
+    </style>
+
+</resources>

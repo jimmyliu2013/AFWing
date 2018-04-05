@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AFWing</string>
+    <string name="info">All content are from http://www.afwing.com/\n\nAuthor：lim\nEmail：13488684927@163.com\n\n</string>
+    <string name="settings_title">Settings</string>
+    <string name="reading_settings_title">Read</string>
+    <string name="font_size">Font size</string>
+    <string name="night_mode">Night mode</string>
+    <string name="cache_settings_title">Cache</string>
+    <string name="clear_content_cache">Restore default settings</string>
+    <string name="clear_picture_cache">Clear image cache</string>
+    <string name="web_settings_title">Network</string>
+    <string name="wifi_only">Only load pictures when using wifi</string>
+    <string name="input_hint">input keyword</string>
+    <string name="about_title">About</string>
+    <string name="info_title">Info</string>
+    <string name="press_again_to_exit">Press again to quit</string>
+    <string name="search_end_toast_text">Keyword not fonnd!</string>
+    <string name="search_fail_toast_text">Load failed, check your network</string>
+    <string name="confirm_to_clear_content_cache">Are you sure?</string>
+    
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_to_clear_image_cache">Are you sure to clear?</string>
+    <string name="page">page</string>
+    <string name="loading">Loading...</string>
+    <string name="loading_cache">Loading cache...</string>
+    
+    <string name="getting_page_info">Loading page info...</string>
+    <string name="load_page_info_failed">Load failed, check your network</string>
+    <string name="checking_update">Checking for update...</string>
+    <string name="insert_sd_card">Insert SD card</string>
+    <string name="failed_to_download_new_version">Failed to download new version</string>
+    <string name="update_title">Update</string>
+    <string name="downloading_new_version">Downloading new version...</string>
+    
+    <string name="slide_to_change_page">Slide to change page</string>
+    <string name="sub_page_list_all">All</string>
+    <string name="load_end_toast_text">End of list</string>
+    
+    <string-array name="font_size_entry">    
+        <item>biggest</item>    
+        <item>big</item>    
+        <item>normal</item>
+        <item>small</item> 
+        <item>smallest</item>    
+    </string-array>    
+    <string-array name="font_size_entry_values">    
+        <item>1</item>    
+        <item>2</item>    
+        <item>3</item>    
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="choose_font_size">Choose font size</string>
+    <string name="font_size_entry_default_value">3</string>    
+    
+</resources>

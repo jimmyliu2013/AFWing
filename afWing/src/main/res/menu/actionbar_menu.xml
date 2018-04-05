@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_bar_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="1"
+        android:title="search"
+        app:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/action_bar_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_dashboard_white_24dp"
+        android:orderInCategory="1"
+        android:title="model"/>
+
+    <!--
+<item
+    android:id="@+id/menu_more"
+    android:orderInCategory="3"
+    android:icon="@drawable/ic_more_vert_black_24dp"
+    android:title="settings"
+    app:showAsAction="always">
+    <menu>
+             
+        <item  
+        android:id="@+id/action_bar_clearcache"  
+        app:showAsAction="always"  
+        android:title="清除缓存"
+        android:icon="@drawable/ic_delete_black_24dp"  
+        
+        /> 
+     <item  
+        android:id="@+id/action_bar_info"  
+        app:showAsAction="always"  
+        android:title="关于"
+        android:icon="@drawable/ic_info_black_24dp"  
+        
+        /> 
+        
+     <item  
+        android:id="@+id/action_bar_settings"  
+        app:showAsAction="always"  
+        android:title="设置"
+        android:icon="@drawable/ic_info_black_24dp"  
+        
+        /> 
+        
+    </menu>
+</item>
+    -->
+
+</menu>

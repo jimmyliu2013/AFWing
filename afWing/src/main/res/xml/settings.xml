@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="settings"
+    android:title="@string/settings_title" >
+
+
+    <PreferenceCategory 
+        android:title="@string/reading_settings_title" 
+        android:layout="@layout/preference_category_custom"
+        >
+
+        <!-- <com.lim.afwing.views.SpinnerPreference -->
+        <ListPreference
+            android:key="font_size"
+            android:title="@string/font_size" 
+            android:entries="@array/font_size_entry"    
+            android:entryValues="@array/font_size_entry_values"    
+            android:dialogTitle="@string/choose_font_size"    
+            android:defaultValue="@string/font_size_entry_default_value"
+            />
+
+        <SwitchPreference
+            android:key="night_mode"
+            android:title="@string/night_mode" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/cache_settings_title" 
+        android:layout="@layout/preference_category_custom"
+        >
+
+        <Preference
+            android:key="clear_content_cache"
+            android:title="@string/clear_content_cache" />
+
+        <Preference
+            android:key="clear_picture_cache"
+            android:title="@string/clear_picture_cache" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/web_settings_title" 
+        android:layout="@layout/preference_category_custom"
+        >
+
+        <SwitchPreference
+            android:key="wifi_only"
+            android:title="@string/wifi_only" />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/about_title" 
+        android:layout="@layout/preference_category_custom"
+        >
+
+        <Preference
+            android:key="info"
+            android:title="@string/info_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
