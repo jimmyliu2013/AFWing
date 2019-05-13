@@ -23,7 +23,7 @@ public class HtmlParser {
 	public static List<PageInfoBean> getPageInfoFromWeb() throws IOException {
 		List<PageInfoBean> list = new ArrayList<PageInfoBean>();
 
-		Document doc = getDocument("http://www.afwing.com/");
+		Document doc = getDocument("http://www.afwing.info/");
 		Elements pageNameElements = doc.getElementsByClass("nav").select("li");
 		Elements pageURLElements = doc.getElementsByClass("nav").select("a");
 
@@ -35,7 +35,7 @@ public class HtmlParser {
 			String pageURL = //"http://www.afwing.com" +
 					pageURLElements.get(i).attr("href");
 			Document subPageDoc = getDocument(
-					                //"http://www.afwing.com" +
+					                "http://www.afwing.info" +
 									pageURLElements.get(i).attr("href"));
 //			Jsoup
 //					.connect(
@@ -93,7 +93,7 @@ public class HtmlParser {
 		Document doc = getDocument(url);
 
 		Elements tabList = null;
-		if (url.equals("http://www.afwing.com/")) {// 区分首页和第二页
+		if (url.equals("http://www.afwing.info/")) {// 区分首页和第二页
 
 			tabList = doc.getElementsByClass("content3").select("div").get(0)
 					.getElementsByClass("left").select("ul").select("li");
@@ -105,12 +105,12 @@ public class HtmlParser {
 
 		for (int i = startNum; i < tabList.size(); i++) {
 			int id = 0; // as primarykey later
-			String imageUrl = "http://www.afwing.com"
+			String imageUrl = "http://www.afwing.info/"
 					+ tabList.get(i).select("img").attr("src");
 			String title = tabList.get(i).getElementsByClass("title").text();
 			String brefing = tabList.get(i).select("p").text();
 			String tips = tabList.get(i).getElementsByClass("tips").text();
-			String linkUrl = "http://m.afwing.com"
+			String linkUrl = "http://m.afwing."
 					+ tabList.get(i).getElementsByClass("title").attr("href");
 
 			list.add(new TabListItemBean(id, imageUrl, title, brefing, tips,
@@ -132,11 +132,11 @@ public class HtmlParser {
 
 		for (int i = 0; i < pagerList.size(); i++) {
 			HashMap<String, String> map = new HashMap<String, String>();
-			String imageUrl = "http://www.afwing.com"
+			String imageUrl = "http://www.afwing.info"
 					+ pagerList.get(i).select("img").attr("src");
 			String description = pagerList.get(i).select("a").attr("alt");
 
-			String linkUrl = "http://m.afwing.com"
+			String linkUrl = "http://m.afwing.info"
 					+ pagerList.get(i).select("a").attr("href");
 
 			map.put("imageUrl", imageUrl);
@@ -160,12 +160,12 @@ public class HtmlParser {
 
 		for (int i = 0; i < tabList.size() - 1; i++) {
 			int id = 0; // as primarykey later
-			String imageUrl = "http://www.afwing.com"
+			String imageUrl = "http://www.afwing.info"
 					+ tabList.get(i).select("img").attr("src");
 			String title = tabList.get(i).getElementsByClass("title").text();
 			String brefing = tabList.get(i).select("p").text();
 			String tips = tabList.get(i).getElementsByClass("tips").text();
-			String linkUrl = "http://m.afwing.com"
+			String linkUrl = "http://m.afwing.info"
 					+ tabList.get(i).select("a").attr("href");
 
             list.add(new TabListItemBean(id, imageUrl, title,
@@ -185,12 +185,12 @@ public class HtmlParser {
 
 		for (int i = 0; i < pagerList.size(); i++) {
 			HashMap<String, String> map = new HashMap<String, String>();
-			String imageUrl = "http://www.afwing.com"
+			String imageUrl = "http://www.afwing.info"
 					+ pagerList.get(i).select("img").attr("src");
 			
 			String title = pagerList.get(i).select("a").attr("alt");
 
-			String linkUrl = "http://m.afwing.com"
+			String linkUrl = "http://m.afwing.info"
 					+ pagerList.get(i).select("a").attr("href");
 
 			//TabListItemBean tabListItemBean = new TabListItemBean(0, imageUrl, title, "", "", linkUrl);
@@ -210,7 +210,7 @@ public class HtmlParser {
 		Document doc = getDocument(url);
 
 		Elements tabList = null;
-		if (url.equals("http://www.afwing.com/")) {// 区分首页和第二页
+		if (url.equals("http://www.afwing.info/")) {// 区分首页和第二页
 
 			tabList = doc.getElementsByClass("content3").select("div").get(0)
 					.getElementsByClass("left").select("ul").select("li");
@@ -222,12 +222,12 @@ public class HtmlParser {
 
 		for (int i = startNum; i < tabList.size(); i++) {
 			int id = 0;
-			String imageUrl = "http://www.afwing.com"
+			String imageUrl = "http://www.afwing.info"
 					+ tabList.get(i).select("img").attr("src");
 			String title = tabList.get(i).getElementsByClass("title").text();
 			String brefing = tabList.get(i).select("p").text();
 			String tips = tabList.get(i).getElementsByClass("tips").text();
-			String linkUrl = "http://m.afwing.com"
+			String linkUrl = "http://m.afwing.info"
 					+ tabList.get(i).getElementsByClass("title").attr("href");
 
 			list.add(new TabListItemBean(id, imageUrl, title,
@@ -263,7 +263,7 @@ public class HtmlParser {
 			
 			
 			if (!rawUrl.contains("http:")) {
-				img.get(i).attr("src", "http://www.afwing.com" + rawUrl);
+				img.get(i).attr("src", "http://www.afwing.info" + rawUrl);
 			}
 			
 			if (!loadImage) {
@@ -306,7 +306,7 @@ public class HtmlParser {
 			System.out.println(title);
 			map.put("linkUrl", linkUrl);
 			System.out.println(linkUrl);
-			if (linkUrl.contains("http://m.afwing.com/")) {
+			if (linkUrl.contains("http://m.afwing.info/")) {
 				list.add(map);
 			}
 			

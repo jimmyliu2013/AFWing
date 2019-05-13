@@ -35,7 +35,7 @@ public class MyFragmentManager {
 			
 			Fragment fragment = null;
 			if (position == 0) {
-				fragment = IndexPageTabFragment.newInstance(mPageInfoList.get(position).getOrderInList(), mPageInfoList.get(0).getPageName(), mPageInfoList.get(0).getPageURL());
+				fragment = IndexPageTabFragment.newInstance(mPageInfoList.get(position).getOrderInList(), mPageInfoList.get(0).getPageName(), "http://www.afwing.info" + mPageInfoList.get(0).getPageURL());
 			}else{
 			
 			    fragment = TabFragment.newInstance(mPageInfoList.get(position).getOrderInList(), mPageInfoList.get(position).getPageName(), mPageInfoList.get(position).getPageURL(), mPageInfoList.get(position).getSubPageList());

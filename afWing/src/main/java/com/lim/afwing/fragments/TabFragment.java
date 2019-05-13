@@ -107,7 +107,7 @@ public class TabFragment extends Fragment implements
 		mContext = getActivity();
 		mOrderInList = getArguments().getInt("orderInList");
 		mCatalogName = getArguments().getString("catalogName");
-		mCatalogUrl = getArguments().getString("catalogUrl");
+		mCatalogUrl = "http://www.afwing.info" + getArguments().getString("catalogUrl");
 		mSubPageList = (List<HashMap<String, String>>) getArguments()
 				.getSerializable("subPageList");
 
@@ -307,10 +307,10 @@ public class TabFragment extends Fragment implements
 
 					break;
 				case Constant.END:
-					Toast.makeText(getActivity(), getResources().getString(R.string.load_end_toast_text), 0).show();
+					Toast.makeText(getActivity(), getResources().getString(R.string.load_end_toast_text), Toast.LENGTH_SHORT).show();
 					break;
 				case Constant.FAIL:
-					Toast.makeText(getActivity(), getResources().getString(R.string.search_fail_toast_text), 0).show();
+					Toast.makeText(getActivity(), getResources().getString(R.string.search_fail_toast_text), Toast.LENGTH_SHORT).show();
 					break;
 
 				default:

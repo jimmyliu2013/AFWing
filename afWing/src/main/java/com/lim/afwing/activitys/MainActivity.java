@@ -376,7 +376,7 @@ public class MainActivity extends ActionBarActivity {
 						arg0.getChildAt(itemOrder).setBackgroundColor(Color.BLACK);
 					}
 				
-					String subUrl =  pageInfoBeanList.get(viewPager.getCurrentItem()).getSubPageList().get(arg2).get("subPageURL");
+					String subUrl = "http://www.afwing.info" +  pageInfoBeanList.get(viewPager.getCurrentItem()).getSubPageList().get(arg2).get("subPageURL");
 					
 					((TabFragment) mMyFragmentManager.getFragment(currentPage)).changePage(subUrl);
 					arg1.setBackgroundColor(Color.GRAY);
